@@ -1,0 +1,131 @@
+.langganan {
+    max-width: 1440px;
+    &__daftar {
+        margin-top: 50px;
+        padding: 0 100px;
+        text-align: left;
+        font-weight: bold;
+    }
+    &__cards {
+        margin-top: 50px;
+        padding: 0 100px;
+        display: flex;
+        justify-content: space-around;
+        &__best-seller {
+            border-radius: 10px;
+            box-shadow: 1px 4px 10px #c9c9c9;
+            h6 {
+                color: #ffffff;
+                font-weight: bold;
+                background: #ce4646;
+                padding: 10px;
+                border-radius: 10px 10px 0 0;
+            }
+            &__kontens {
+                padding: 25px;
+                h5 {
+                    font-weight: bold;
+                    color: #ce4646;
+                }
+                p {
+                    span {
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+                }
+                ul {
+                    width: 200px;
+                    list-style: none;
+                    padding: 0;
+                    li {
+                        text-align: left;
+                        margin-bottom: 10px;
+                        display: flex;
+                        img {
+                            width: 25px;
+                            margin: 0 5px;
+                        }
+                        p {
+                            margin: 0 10px;
+                        }
+                    }
+                }
+                .btn-akumau-best {
+                    color: #ffffff;
+                    font-weight: bold;
+                    padding: 5px 55px;
+                    background: #ce4646;
+                    border-radius: 1.5rem;
+                    border: 2px solid #ffffff;
+                }
+                .btn-akumau-best:hover {
+                    color: #ce4646;
+                    background: #ffffff;
+                    border: 2px solid #ce4646;
+                }
+                .btn-akumau-best:focus {
+                    box-shadow: none;
+                    background-color: #ffffff ;
+                    color: #ce4646;
+                    border: 2px solid #ce4646;
+                }
+            }
+        }
+        &__konten {
+            margin-top: 25px;
+            border-radius: 10px;
+            padding: 25px;
+            height: 100%;
+            box-shadow: 2px 3px 8px #c9c9c9;
+            h6 {
+                background: #ce4646;
+            }
+            h5 {
+                font-weight: bold;
+                color: #ce4646;
+            }
+            p {
+                span {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
+            ul {
+                width: 200px;
+                list-style: none;
+                padding: 0;
+                li {
+                    text-align: left;
+                    margin-bottom: 10px;
+                    display: flex;
+                    img {
+                        width: 25px;
+                        margin: 0 5px;
+                    }
+                    p {
+                        margin: 0 10px;
+                    }
+                }
+            }
+            .btn-akumau {
+                color: #ffffff;
+                font-weight: bold;
+                padding: 5px 55px;
+                background: #ce4646;
+                border-radius: 1.5rem;
+                border: 2px solid #ffffff;
+            }
+            .btn-akumau:hover {
+                color: #ce4646;
+                background: #ffffff;
+                border: 2px solid #ce4646;
+            }
+            .btn-akumau:focus {
+                box-shadow: none;
+                background-color: #ffffff ;
+                color: #ce4646;
+                border: 2px solid #ce4646;
+            }
+        }
+    }
+}

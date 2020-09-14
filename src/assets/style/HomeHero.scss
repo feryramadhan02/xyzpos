@@ -1,0 +1,71 @@
+.hero {
+    max-width: 1440px;
+    padding: 200px 85px 120px 85px;
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-gap: 230px;
+    margin-bottom: 120px;
+    &__advertise {
+        margin: 0 5px;
+        text-align: left;
+        padding-right: 100px;
+        h3 {
+            font-size: 35px;
+            span {
+                color: #ce4646;
+                font-weight: bold;
+            }
+        }
+        &__buttons {
+            margin-top: 50px;
+            display: grid;
+            .primmary {
+                color: #ffffff;
+                font-weight: bold;
+                background: #ce4646;
+                border-radius: 1.5rem;
+                border: 2px solid #ffffff;
+            }
+            .primmary:hover {
+                color: #ce4646;
+                font-weight: bold;
+                background: none;
+                border-radius: 1.5rem;
+                border: 2px solid #ce4646;
+            }
+            .primmary:focus {
+                box-shadow: none;
+                background-color: #ffffff ;
+                color: #ce4646;
+                border: 2px solid #ce4646;
+            }
+            .secondary {
+                margin: 15px 0;
+                color: #ce4646;
+                font-weight: bold;
+                background: none;
+                border-radius: 1.5rem;
+                border: 2px solid #ce4646;
+            }
+            .secondary:hover {
+                color: #ffffff;
+                font-weight: bold;
+                background: #ce4646;
+                border-radius: 1.5rem;
+                border: 2px solid #ffffff;
+            }
+            .secondary:focus {
+                box-shadow: none;
+                background-color: #ce4646 ;
+                color: #ffffff;
+                border: 2px solid #ffffff;
+            }
+        }
+    }
+    &__picture {
+        margin: 0 5px;
+        img {
+            width: 80%;
+        }
+    }
+}

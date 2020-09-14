@@ -1,0 +1,85 @@
+.draw {
+    width: 20%;
+    box-shadow: 2px 2px 5px #c9c9c9;
+    &__btn-close {
+        position: absolute;
+        left: 0;
+        .close {
+            background: none;
+            margin: 20px 10px;
+            color: #ce4646;
+        }
+        .close:hover {
+            background: none;
+            margin: 20px 10px;
+            color: #ce4646;
+        }
+        .close:focus {
+            background: none;
+            box-shadow: none;
+            color: #ce4646;
+        }
+    }
+    &__draws {
+        display: flex;
+        padding: 50px 15px 15px 15px;
+        &__profile {
+            img {
+                width: 50px;
+                padding: 0 5px;
+            }
+        }
+        &__bio {
+            text-align: left;
+            h5 {
+                margin-bottom: 0;
+                font-weight: bold;
+            }
+            p {
+                font-size: 15px;
+            }
+            .out {
+                margin-top: -25px;
+                font-size: 12px;
+                color: #ce4646;
+                background: none;
+                padding: 0;
+                border-color: #ffffff;
+            }
+            .out:hover {
+                color: #ce4646;
+                background: none;
+                border-color: #ffffff;
+            }
+            .out:focus {
+                color: #ce4646;
+                background: none;
+                border-color: #ffffff;
+                box-shadow: none;
+            }
+        }
+    }
+    &__menu {
+        ul {
+            padding: 0 10px;
+            list-style: none;
+            text-align: left;
+            li {
+                margin-bottom: 15px;
+                a {
+                    color: #0a0a0a;
+                    font-weight: bold;
+                    img {
+                        padding: 0 5px;
+                    }
+                }
+                a:hover {
+                    text-decoration: none;
+                }
+            }
+            li:hover {
+                background-color: #dadada;
+            }
+        }
+    }
+}
