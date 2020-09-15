@@ -13,8 +13,8 @@ const Drawer = () => {
         drawRef.current.style.transition = "all 300ms ease-out"
     }
 
-    const logout = () => {
-        history.push("/")
+    const logout = async () => {
+        history.replace("/")
     }
 
     return (
