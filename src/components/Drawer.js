@@ -29,11 +29,11 @@ const Drawer = () => {
                 <div className="draw__draws__profile"><img src={require('../assets/images/photo-profile.svg')} alt="" /></div>
                 <div className="draw__draws__bio">
                     {Profile.map(item =>
-                        <div>
+                        <div key={item.index}>
                             <h5>{item.name}</h5>
+                            <p>{item.email}</p>
                         </div>
                     )}
-                    <p>abcd@gnail.com</p>
                     <Button className="out" onClick={logout}>Keluar</Button>
                 </div>
             </div>
