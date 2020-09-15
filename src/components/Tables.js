@@ -1,11 +1,13 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
-import { DataTable } from '../data/datatable';
+import { useSelector } from 'react-redux';
 
 import '../assets/style/Table.scss';
 import { Button } from 'react-bootstrap';
 
 const Tables = () => {
+    const DataTables = useSelector(state => state.data.DataTable)
+
     return (
         <div className="table">
             <Table striped bordered hover>
@@ -20,7 +22,7 @@ const Tables = () => {
                         <th>Action</th>
                     </tr>
                 </thead>
-                {DataTable.map(item =>
+                {DataTables.map(item =>
                     <tbody >
                         <tr key={item.id}>
                             <td>{item.time}</td>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Drawer from '../components/Drawer';
-import { Summary } from '../data/summary';
 import Tables from '../components/Tables';
 
 
@@ -9,6 +8,7 @@ import '../assets/style/Dashboard.scss';
 
 const Dashboard = () => {
     const Profile = useSelector(state => state.auth.profile)
+    const Summaries = useSelector(state => state.data.Summary)
 
     // useEffect(() => {
     //     dispatch(Get())
@@ -27,7 +27,7 @@ const Dashboard = () => {
                     </h4>
                 </div>
                 <div className="dashboard__layout__based">
-                    {Summary.map(list =>
+                    {Summaries.map(list =>
                         <>
                             {list.id === 4 ?
                                 <div key={list.id} className="dashboard__layout__based__cards">

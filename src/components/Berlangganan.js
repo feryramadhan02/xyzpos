@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import Modal from 'react-bootstrap/Modal'
 import { Login, Regis } from '../store/actions/auth';
-import { Paket } from '../data/paket'
+
 
 import '../assets/style/Berlangganan.scss';
 import '../assets/style/Modal.scss';
@@ -17,6 +17,7 @@ const Berlangganan = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const isAuthenticate = useSelector(state => state.auth.isAuthenticate)
+    const Pakets = useSelector(state => state.data.Paket)
     const [input, setInput] = useState({
         name: "",
         email: "",
@@ -128,7 +129,7 @@ const Berlangganan = () => {
             </>
             <h2 className="langganan__daftar">Daftar sekarang dan nikmati fiturnya!</h2>
             <div className="langganan__cards">
-                {Paket.map(item =>
+                {Pakets.map(item =>
                     <>
                         {item.id === 2 ?
                             <div key={item.id} className="langganan__cards__best-seller">
