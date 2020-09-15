@@ -4,17 +4,27 @@ import Drawer from '../components/Drawer';
 import { Summary } from '../data/summary';
 import Tables from '../components/Tables';
 
+
 import '../assets/style/Dashboard.scss';
 
 const Dashboard = () => {
-    const Profile = useSelector(state => state.auth.profile.email)
+    const Profile = useSelector(state => state.auth.profile)
+
+    // useEffect(() => {
+    //     dispatch(Get())
+    // }, [dispatch])
+
     return (
         <div className="dashboard">
             <Drawer />
             <div className="dashboard__layout">
                 <div className="dashboard__layout__title">
                     <p>Dashboard</p>
-                    <h4>Halo,{Profile}</h4>
+                    <h4>Halo,
+                    {Profile.map(item =>
+                        <span>{item.name}</span>
+                    )}
+                    </h4>
                 </div>
                 <div className="dashboard__layout__based">
                     {Summary.map(list =>

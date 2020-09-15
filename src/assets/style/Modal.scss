@@ -31,6 +31,17 @@
                        cursor: pointer;
                    }
                }
+               input[type=text] {
+                    background-image: url('../images/face.svg');
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-size: 25px;
+                    padding: 5px 5px 5px 25px;
+                    border-radius: 1rem;
+                    border-color: #ce4646;
+                    margin-bottom: 15px;
+                    outline: none;
+                }
                 input[type=email] {
                     background-image: url('../images/email.svg');
                     background-repeat: no-repeat;

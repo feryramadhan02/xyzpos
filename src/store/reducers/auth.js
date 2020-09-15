@@ -12,8 +12,7 @@ const initialState = {
 }
 
 export const authReducer = (state = initialState, action) => {
-    const { type, payload } = action
-    switch (type) {
+    switch (action.type) {
         default:
             return {
                 ...state
@@ -21,24 +20,27 @@ export const authReducer = (state = initialState, action) => {
         case SIGN_UP_SUCCESS:
             return {
                 ...state,
-                isAuthenticate: true
+                isAuthenticate: true,
+                profile: [...state.profile, action.payload]
             }
         case SIGN_UP_FAILED:
             return {
                 ...state,
-                isAuthenticate: false
+                isAuthenticate: false,
+                profile: []
             }
         case LOGIN_SUCCESS:
             return {
                 ...state,
                 isAuthenticate: true,
-                profile: [...state.profile, payload]
+                profile: []
             }
         case LOGIN_FAILED:
+            alert(action.payload)
             return {
                 ...state,
                 isAuthenticate: false,
-                profile: ""
+                profile: []
             }
     }
 

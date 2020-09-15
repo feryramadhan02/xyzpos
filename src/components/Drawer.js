@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { Button } from 'react-bootstrap';
+import { useSelector } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
 
 import '../assets/style/Drawer.scss';
@@ -13,6 +14,8 @@ const Drawer = () => {
         drawRef.current.style.transition = "all 300ms ease-out"
     }
 
+    const Profile = useSelector(state => state.auth.profile)
+
     const logout = async () => {
         history.replace("/")
     }
@@ -25,8 +28,12 @@ const Drawer = () => {
             <div className="draw__draws">
                 <div className="draw__draws__profile"><img src={require('../assets/images/photo-profile.svg')} alt="" /></div>
                 <div className="draw__draws__bio">
-                    <h5>Ahmad</h5>
-                    <p>gagaga@gmail.com</p>
+                    {Profile.map(item =>
+                        <div>
+                            <h5>{item.name}</h5>
+                        </div>
+                    )}
+                    <p>abcd@gnail.com</p>
                     <Button className="out" onClick={logout}>Keluar</Button>
                 </div>
             </div>
