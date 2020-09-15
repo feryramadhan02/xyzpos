@@ -1,0 +1,87 @@
+.modal-login {
+    .modal-content {
+        border-radius: 1rem;
+        padding: 10px 20px;
+        .modal-header {
+            border-bottom: none;
+            .close {
+                color: #ce4646;
+            }
+        }
+        .modal-body {
+            display: flex;
+            .picture {
+                img {
+                    width: 200px;
+                }
+            }
+            .forms {
+                padding: 0 10px;
+                h3 {
+                    color: #0a0a0a;
+                    font-weight: bold;
+                }
+               p {
+                   padding: 10px;
+                   span {
+                       color: #ce4646;
+                       font-weight: bold;
+                   }
+                   span:hover {
+                       cursor: pointer;
+                   }
+               }
+                input[type=email] {
+                    background-image: url('../images/email.svg');
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-size: 25px;
+                    padding: 5px 5px 5px 25px;
+                    border-radius: 1rem;
+                    border-color: #ce4646;
+                    margin-bottom: 15px;
+                    outline: none;
+                }
+                input[type=password] {
+                    background-image: url('../images/password.svg');
+                    background-repeat: no-repeat;
+                    background-position: left;
+                    background-size: 25px;
+                    padding: 5px 5px 5px 25px;
+                    border-radius: 1rem;
+                    border-color: #ce4646;
+                    margin-bottom: 15px;
+                    outline: none;
+                }
+                .custom-control-input:checked~.custom-control-label::before {
+                    color: #fff;
+                    border-color: #ce4646;
+                    background-color: #ce4646;
+                }
+                .btn-signin {
+                    width: 100%;
+                    color: #ffffff;
+                    font-weight: bold;
+                    margin-top: 15px;
+                    background: #ce4646;
+                    border-radius: 1.5rem;
+                    border: 2px solid #ffffff;
+                }
+                .btn-signin:hover {
+                    color: #ce4646;
+                    font-weight: bold;
+                    background: none;
+                    border-radius: 1.5rem;
+                    border: 2px solid #ce4646;
+                }
+                .btn-signin:focus {
+                    box-shadow: none;
+                    background-color: #ffffff ;
+                    color: #ce4646;
+                    border: 2px solid #ce4646;
+                }
+            }
+        }
+    }
+    
+}

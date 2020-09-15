@@ -1,9 +1,9 @@
 .draw {
+    margin-left: 0;
     width: 20%;
     box-shadow: 2px 2px 5px #c9c9c9;
     &__btn-close {
-        position: absolute;
-        left: 0;
+        display: flex;
         .close {
             background: none;
             margin: 20px 10px;
@@ -22,7 +22,7 @@
     }
     &__draws {
         display: flex;
-        padding: 50px 15px 15px 15px;
+        padding: 10px 15px;
         &__profile {
             img {
                 width: 50px;
